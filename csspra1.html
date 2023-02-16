@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>website</title>
+    <style>
+      .menu {
+        background-color: grey;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 5px;
+        border-bottom: 5px solid lightseagreen;
+      }
+      .logo {
+        text-align: center;
+        margin-top: 20px;
+        margin-left: 20px;
+      }
+      .items {
+        text-align: left;
+      }
+      .items a {
+        margin-left: 30px;
+        margin-right: 30px;
+        text-decoration: none;
+      }
+
+      .data {
+        display: flex;
+        flex-direction: column;
+      }
+      .list {
+        background-color: darkgray;
+      }
+      .list a {
+        text-decoration: none;
+        margin-right: 50px;
+      }
+
+      table {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        border: 10px solid;
+        text-align: center;
+      }
+      th,
+      td {
+        border: 2px solid;
+      }
+
+      @media only screen and (max-width: 400px) {
+        .menu {
+          display: flex;
+          flex-wrap: wrap;
+        }
+        .data {
+          display: flexbox;
+          flex-direction: row;
+        }
+      }
+      @media only screen and (min-width: 768px) {
+        .menu {
+          display: flex;
+        }
+        .data {
+          display: flexbox;
+          flex-direction: row;
+        }
+      }
+      @media only screen and (min-width: 992px) {
+        .menu {
+          display: flex;
+          flex-wrap: wrap;
+        }
+        .data {
+          display: flexbox;
+          flex-direction: row;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="menu">
+      <div class="logo">
+        <img src="images.jpeg" alt="images" height="70px" width="70px" />
+      </div>
+      <div class="items">
+        <a href="radixlogopage.html">HOME</a>
+        <a href="html.html">HTML</a>
+        <a href="css.html">CSS</a>
+        <a href="bootstrap.html">BootStrap</a>
+        <a href="JavaScirpt.html">JavaScript</a>
+        <a href="Jquery.html">JQuery</a>
+        <a href="mini.html">Mini Project</a>
+        <a href="sql.html">SQl</a>
+      </div>
+    </div>
+    <div class="data">
+      <div class="list">
+        <ul>
+          <li>Day 1</li>
+          <ul>
+            <li>Assignment</li>
+            <ul>
+              <li><a href="cssassign1.html">Assignment 1</a></li>
+              <li><a href="cssassign2.html"> Assignment 2</a></li>
+            </ul>
+            <li>Practise</li>
+            <ul>
+              <li><a href="csspra1.html">Practise 1</a></li>
+              <li><a href="csspra2.html">Practise 2</a></li>
+              <li><a href="csspra3.html">Practise 3</a></li>
+              <li><a href="csspra4.html">Practise 4</a></li>
+            </ul>
+          </ul>
+        </ul>
+        <ul>
+          <li>Day 2</li>
+          <ul>
+            <li>Assignment</li>
+            <ul>
+              <li><a href="cssassign1day2.html">Assignment 1</a></li>
+              <li><a href="cssassign2day2.html"> Assignment 2</a></li>
+            </ul>
+            <li>Practise</li>
+            <ul>
+              <li><a href="csspra1.html">Practise 1</a></li>
+              <li><a href="csspra2.html">Practise 2</a></li>
+              <li><a href="csspra3.html">Practise 3</a></li>
+              <li><a href="csspra4.html">Practise 4</a></li>
+              <li><a href="webpage.html">Practise 5</a></li>
+            </ul>
+          </ul>
+        </ul>
+      </div>
+      <div class="details">
+        <table>
+          <caption>
+            Report student
+          </caption>
+          <tr>
+            <th id="headi" colspan="6">Report Card Of student</th>
+          </tr>
+          <tr>
+            <th id="i2">Name</th>
+            <th id="rn1">Roll No</th>
+            <th id="years">Year Of Passing</th>
+            <th id="math">Maths</th>
+            <th id="science1">science</th>
+            <th id="english1">English</th>
+          </tr>
+          <tr>
+            <td>Vishal Chavda</td>
+            <td>1</td>
+            <td>2017</td>
+            <td>B</td>
+            <td>A-</td>
+            <td>C</td>
+          </tr>
+          <tr>
+            <td>Ayushi Patel</td>
+            <td>2</td>
+            <td>2017</td>
+            <td>B+</td>
+            <td>A+</td>
+            <td>C</td>
+          </tr>
+          <tr>
+            <td>Krishna Parmar</td>
+            <td>3</td>
+            <td>2013</td>
+            <td>C+</td>
+            <td>B-</td>
+            <td>A</td>
+          </tr>
+          <tr>
+            <td>Vishnu Prajapati</td>
+            <td>4</td>
+            <td>2016</td>
+            <td>A+</td>
+            <td>C</td>
+            <td>B+</td>
+          </tr>
+          <tr>
+            <td>Parth Oza</td>
+            <td>5</td>
+            <td>2012</td>
+            <td>B</td>
+            <td>A</td>
+            <td>C+</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>website</title>
+    <style>
+      .menu {
+        background-color: grey;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 5px;
+        border-bottom: 5px solid lightseagreen;
+      }
+      .logo {
+        text-align: center;
+        margin-top: 20px;
+        margin-left: 20px;
+      }
+      .items {
+        text-align: left;
+      }
+      .items a {
+        margin-left: 30px;
+        margin-right: 30px;
+        text-decoration: none;
+      }
+
+      .data {
+        display: flex;
+        flex-direction: column;
+      }
+      .list {
+        background-color: darkgray;
+      }
+      .list a {
+        text-decoration: none;
+        margin-right: 50px;
+      }
+
+      @media only screen and (max-width: 400px) {
+        .menu {
+          display: flex;
+          flex-wrap: wrap;
+        }
+        .data {
+          display: flexbox;
+          flex-direction: row;
+        }
+      }
+      @media only screen and (min-width: 768px) {
+        .menu {
+          display: flex;
+        }
+        .data {
+          display: flexbox;
+          flex-direction: row;
+        }
+      }
+      @media only screen and (min-width: 992px) {
+        .menu {
+          display: flex;
+          flex-wrap: wrap;
+        }
+        .data {
+          display: flexbox;
+          flex-direction: row;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="menu">
+      <div class="logo">
+        <img src="images.jpeg" alt="images" height="70px" width="70px" />
+      </div>
+      <div class="items">
+        <a href="radixlogopage.html">HOME</a>
+        <a href="html1.html">HTML</a>
+        <a href="Css.html">CSS</a>
+        <a href="bootstrap.html">BootStrap</a>
+        <a href="JavaScirpt.html">JavaScript</a>
+        <a href="Jquery.html">JQuery</a>
+        <a href="mini.html">Mini Project</a>
+        <a href="sql.html">SQl</a>
+      </div>
+    </div>
+    <div class="data">
+      <div class="list">
+        <ul>
+          <li>Day 1</li>
+          <ul>
+            <li>Assignment</li>
+            <ul>
+              <li><a href="htmlassign1.html">Assignment 1</a></li>
+              <li><a href="html3.html"> Assignment 2</a></li>
+            </ul>
+            <li>Practise</li>
+            <ul>
+              <li><a href="htmlpra1.html">Practise 1</a></li>
+              <li><a href="practise2.html">Practise 2</a></li>
+            </ul>
+          </ul>
+        </ul>
+      </div>
+      <div class="details">
+        <h2><strong>Manager And Employees List</strong></h2>
+        <br />
+        <ul style="list-style-type: square">
+          <li>HR11</li>
+          <ol style="list-style-type: circle">
+            <li>Employee11</li>
+            <li>Employee21</li>
+            <li>Employee34</li>
+          </ol>
+          <li>HR21</li>
+          <ol style="list-style-type: circle">
+            <li>Employee45</li>
+            <li>Employee56</li>
+            <li>Employee67</li>
+          </ol>
+          <li>HR31</li>
+          <ol style="list-style-type: circle">
+            <li>Employee71</li>
+            <li>Employee81</li>
+            <li>Employee91</li>
+            <li>Employee09</li>
+          </ol>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

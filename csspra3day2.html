@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>website</title>
+    <style>
+      .menu {
+        background-color: grey;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 5px;
+        border-bottom: 5px solid lightseagreen;
+      }
+      .logo {
+        text-align: center;
+        margin-top: 20px;
+        margin-left: 20px;
+      }
+      .items {
+        text-align: left;
+      }
+      .items a {
+        margin-left: 30px;
+        margin-right: 30px;
+        text-decoration: none;
+      }
+
+      .data {
+        display: flex;
+        flex-direction: column;
+      }
+      .list {
+        background-color: darkgray;
+      }
+      .list a {
+        text-decoration: none;
+        margin-right: 50px;
+      }
+      .id {
+        border: 2px solid blue;
+        border-radius: 8px;
+        padding: 5px;
+      }
+
+      @media only screen and (max-width: 500px) {
+        .id {
+          border: 2px solid red;
+        }
+      }
+
+      @media only screen and (max-width: 400px) {
+        .menu {
+          display: flex;
+          flex-wrap: wrap;
+        }
+        .data {
+          display: flexbox;
+          flex-direction: row;
+        }
+      }
+      @media only screen and (min-width: 768px) {
+        .menu {
+          display: flex;
+        }
+        .data {
+          display: flexbox;
+          flex-direction: row;
+        }
+      }
+      @media only screen and (min-width: 992px) {
+        .menu {
+          display: flex;
+          flex-wrap: wrap;
+        }
+        .data {
+          display: flexbox;
+          flex-direction: row;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="menu">
+      <div class="logo">
+        <img src="images.jpeg" alt="images" height="70px" width="70px" />
+      </div>
+      <div class="items">
+        <a href="home.html">HOME</a>
+        <a href="html.html">HTML</a>
+        <a href="css.html">CSS</a>
+        <a href="bootstrap.html">BootStrap</a>
+        <a href="JavaScirpt.html">JavaScript</a>
+        <a href="Jquery.html">JQuery</a>
+        <a href="mini.html">Mini Project</a>
+        <a href="sql.html">SQl</a>
+      </div>
+    </div>
+    <div class="data">
+      <div class="list">
+        <ul>
+          <li>Day 1</li>
+          <ul>
+            <li>Assignment</li>
+            <ul>
+              <li><a href="cssassign1.html">Assignment 1</a></li>
+              <li><a href="cssassign2.html"> Assignment 2</a></li>
+            </ul>
+            <li>Practise</li>
+            <ul>
+              <li><a href="csspra1.html">Practise 1</a></li>
+              <li><a href="csspra2.html">Practise 2</a></li>
+              <li><a href="csspra3.html">Practise 3</a></li>
+              <li><a href="csspra4.html">Practise 4</a></li>
+            </ul>
+          </ul>
+        </ul>
+        <ul>
+          <li>Day 2</li>
+          <ul>
+            <li>Assignment</li>
+            <ul>
+              <li><a href="cssassign1day2.html">Assignment 1</a></li>
+              <li><a href="cssassign2day2.html"> Assignment 2</a></li>
+              <li><a href="cssassign3day2.html"> Assignment 3</a></li>
+              <li><a href="cssassign4day2.html"> Assignment 4</a></li>
+            </ul>
+            <li>Practise</li>
+            <ul>
+              <li><a href="csspra1day2.html">Practise 1</a></li>
+              <li><a href="csspra2day2.html">Practise 2</a></li>
+              <li><a href="csspra3day2.html">Practise 3</a></li>
+              <li><a href="csspra4.html">Practise 4</a></li>
+            </ul>
+          </ul>
+        </ul>
+      </div>
+      <div class="details">
+        <div class="id">
+          <h1>changing the color of the border</h1>
+          <p>
+            change the size of the screen to change the color of the border.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
