@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div class="container m-5">
+      <form id="cal">
+        <h1 class="text-center">Calculator Using JavaScript</h1>
+        <div class="form-group">
+          <label for="number1">Enter the Number 1</label>
+          <input
+            type="number"
+            name="number1"
+            id="number1"
+            class="form-control mt-2"
+            placeholder="number 1"
+          />
+          <br />
+        </div>
+        <div class="form-group">
+          <label for="number2">Enter the Number 2</label>
+          <input
+            type="number"
+            name="number2"
+            class="form-control mt-2"
+            id="number2"
+            placeholder="number 2"
+          /><br />
+        </div>
+        <div class="form-group">
+          <p>Please select your operation:</p>
+          <input type="radio" id="add" name="operation" value="add" />
+          <label for="add">addition</label><br />
+          <input type="radio" id="sub" name="operation" value="sub" />
+          <label for="sub">Subtracation</label><br />
+          <input type="radio" id="mul" name="operation" value="mul" />
+          <label for="mul">Multiplication</label><br />
+          <input type="radio" id="div" name="operation" value="div" />
+          <label for="div">Division</label>
+        </div>
+        <div class="form-group">
+          <p id="result"></p>
+          <button
+            type="button"
+            class="form-control mt-2 bg-primary"
+            onclick="submit1()"
+          >
+            Submit</button
+          ><br />
+          <button
+            type="button"
+            class="form-control mt-2 bg-danger"
+            onclick="reset1()"
+          >
+            Clear</button
+          ><br />
+        </div>
+      </form>
+    </div>
+    <script>
+      function submit1() {
+        var a = document.getElementById('number1').value;
+        var b = document.getElementById('number2').value;
+        if (document.getElementById('add').checked) {
+          var c = parseInt(a) + parseInt(b);
+
+          document.getElementById('result').innerHTML =
+            'Addition of number is:' + c;
+        } else if (document.getElementById('sub').checked) {
+          var c = parseInt(a) - parseInt(b);
+
+          document.getElementById('result').innerHTML =
+            'Subtraction of number is:' + c;
+        } else if (document.getElementById('mul').checked) {
+          var c = parseInt(a) * parseInt(b);
+
+          document.getElementById('result').innerHTML =
+            'Multiplicationof number is:' + c;
+        } else if (document.getElementById('div').checked) {
+          var c = parseInt(a) / parseInt(b);
+
+          document.getElementById('result').innerHTML =
+            'Division of number is:' + c;
+        } else {
+          document.getElementById('error').innerHTML =
+            'You have not selected any operation';
+        }
+      }
+      function reset1() {
+        document.getElementById('cal').reset();
+      }
+    </script>
+  </body>
+</html>
